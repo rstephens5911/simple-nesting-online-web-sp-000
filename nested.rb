@@ -46,6 +46,10 @@ end
 def dennis_ritchies_language
 	programmer_hash =
  		{
+        :yukihiro_matsumoto => {
+        :known_for => "Ruby",
+        :languages => ["LISP", "C"]
+      },
         :grace_hopper => {
           :known_for => "COBOL",
           :languages => ["COBOL", "FORTRAN"]
@@ -89,6 +93,10 @@ end
 def changing_alan
 	programmer_hash =
  		{
+        :yukihiro_matsumoto => {
+        :known_for => "Ruby",
+        :languages => ["LISP", "C"]
+      },
         :grace_hopper => {
           :known_for => "COBOL",
           :languages => ["COBOL", "FORTRAN"]
@@ -111,6 +119,10 @@ end
 def adding_to_dennis
 	programmer_hash =
  		{
+        :yukihiro_matsumoto => {
+        :known_for => "Ruby",
+        :languages => ["LISP", "C"]
+      },
         :grace_hopper => {
           :known_for => "COBOL",
           :languages => ["COBOL", "FORTRAN"]
