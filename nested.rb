@@ -2,10 +2,6 @@
 def hopper
 	programmer_hash =
  		{
-        :yukihiro_matsumoto => {
-        :known_for => "Ruby",
-        :languages => ["LISP", "C"]
-      },
         :grace_hopper => {
           :known_for => "COBOL",
           :languages => ["COBOL", "FORTRAN"]
@@ -27,10 +23,6 @@ def alan_kay_is_known_for
 
 	programmer_hash =
  		{
-        :yukihiro_matsumoto => {
-        :known_for => "Ruby",
-        :languages => ["LISP", "C"]
-      },
         :grace_hopper => {
           :known_for => "COBOL",
           :languages => ["COBOL", "FORTRAN"]
@@ -50,10 +42,6 @@ end
 def dennis_ritchies_language
 	programmer_hash =
  		{
-        :yukihiro_matsumoto => {
-        :known_for => "Ruby",
-        :languages => ["LISP", "C"]
-      },
         :grace_hopper => {
           :known_for => "COBOL",
           :languages => ["COBOL", "FORTRAN"]
@@ -71,12 +59,14 @@ def dennis_ritchies_language
 end
 
 def adding_matz
-	programmer_hash =
- 		{
-        :yukihiro_matsumoto => {
-        :known_for => "Ruby",
-        :languages => ["LISP", "C"]
-      },
+# add the following information to the top level of programmer_hash
+# :yukihiro_matsumoto => {
+#   :known_for => "Ruby",
+#    :languages => ["LISP", "C"]
+# }
+
+  programmer_hash =
+    {
         :grace_hopper => {
           :known_for => "COBOL",
           :languages => ["COBOL", "FORTRAN"]
@@ -90,15 +80,16 @@ def adding_matz
           :languages => ["C"]
         }
      }
+
+		 programmer_hash[:yukihiro_matsumoto] = {}
+		 programmer_hash[:yukihiro_matsumoto][:known_for] = "Ruby"
+		 programmer_hash[:yukihiro_matsumoto][:languages] = ["LISP", "C"]
+		 programmer_hash
 end
 
 def changing_alan
   programmer_hash =
  		{
-        :yukihiro_matsumoto => {
-        :known_for => "Ruby",
-        :languages => ["LISP", "C"]
-      },
         :grace_hopper => {
           :known_for => "COBOL",
           :languages => ["COBOL", "FORTRAN"]
@@ -116,17 +107,13 @@ def changing_alan
      # alans_new_info = "GUI"
      alans_new_info = "GUI"
 
-     programmer_hash[:alan_kay][:known_for] = "GUI"
+     programmer_hash[:alan_kay][:known_for] = alans_new_info
      programmer_hash
 end
 
 def adding_to_dennis
 	programmer_hash =
  		{
-        :yukihiro_matsumoto => {
-        :known_for => "Ruby",
-        :languages => ["LISP", "C"]
-      },
         :grace_hopper => {
           :known_for => "COBOL",
           :languages => ["COBOL", "FORTRAN"]
