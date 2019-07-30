@@ -40,7 +40,7 @@ def alan_kay_is_known_for
           :languages => ["C"]
         }
      }
-     programmer_hash [:alan_kay][:known_for] << "fried balonie eating champeen of the world."
+     programmer_hash [:alan_kay][:known_for] = "GUI"
      programmer_hash [:alan_kay][:known_for]
 end
 
